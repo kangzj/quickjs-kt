@@ -51,3 +51,4 @@ cp -R "$repo/$group_path/." "$pages/$group_path/"
 git -C "$pages" add -A
 git -C "$pages" commit -q -m "Publish $version from $commit"
 git -C "$pages" push origin HEAD:refs/heads/maven
+echo "Published $version. Pin settings.gradle.kts to maven commit $(git -C "$pages" rev-parse HEAD)."
