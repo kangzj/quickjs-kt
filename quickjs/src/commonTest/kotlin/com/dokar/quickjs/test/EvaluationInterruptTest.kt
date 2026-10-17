@@ -89,4 +89,21 @@ class EvaluationInterruptTest {
             }
         }
     }
+
+    @Test
+    fun interruptEndsAJobThatRequeuesItself() = runTest {
+        withContext(Dispatchers.Default) {
+            quickJs {
+                evaluationTimeoutMillis = 300
+                withTimeout(5_000) {
+                    assertFailsWith<QuickJsInterruptedException> {
+                        evaluate<Unit>(
+                            "Promise.resolve().then(function f() { Promise.resolve().then(f); while (true) {} });",
+                            "test.js",
+                        )
+                    }
+                }
+            }
+        }
+    }
 }

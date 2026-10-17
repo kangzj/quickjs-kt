@@ -586,9 +586,16 @@ actual class QuickJs private constructor(
                 if (isClosed) throw CancellationException("Already closed.")
                 withEvaluationSession(session) {
                     var executedAny = false
+                    var jobsPastInterrupt = 0
                     do {
                         val executed = executePendingJob(context, globals)
                         executedAny = executedAny || executed
+                        // The jobs an interrupted one left settle its promises, but a job
+                        // that requeues itself never empties the queue, so the drain
+                        // is cut after a bounded number of jobs past the interrupt.
+                        if (executed && wasInterrupted() && ++jobsPastInterrupt > MAX_JOBS_PAST_INTERRUPT) {
+                            throw QuickJsInterruptedException("interrupted")
+                        }
                     } while (executed)
                     isEvaluateResultPending(context, globals, evaluation.handle) to executedAny
                 }
@@ -1073,3 +1080,6 @@ actual class QuickJs private constructor(
         )
     }
 }
+
+/** How many jobs a drain runs past an interrupt before it gives up on the queue. */
+private const val MAX_JOBS_PAST_INTERRUPT = 1_000
