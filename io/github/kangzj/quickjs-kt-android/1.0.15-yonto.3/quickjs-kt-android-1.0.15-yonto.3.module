@@ -1,0 +1,135 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../quickjs-kt/1.0.15-yonto.3/quickjs-kt-1.0.15-yonto.3.module",
+    "group": "io.github.kangzj",
+    "module": "quickjs-kt",
+    "version": "1.0.15-yonto.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quickjs-release.aar",
+          "url": "quickjs-kt-android-1.0.15-yonto.3.aar",
+          "size": 1829122,
+          "sha512": "65e3d54f301453beb2559a9b25c4c44b0e2601fb40f759003db8539833bcc8aa15ee64e3f96e6987f22550eecf375c8893eb2edabc320b43e4d1ab6b65a80fce",
+          "sha256": "8ab0f2b9230b46bb7a5e8bcc0f0ded0afd2b0105f6c3ebe608721a0e9eabe3c2",
+          "sha1": "e19541ea2595d3de0088f541207a247aeca4ffa9",
+          "md5": "ff0c6c1104031a992553513e593498ea"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          },
+          "excludes": [
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-stdlib-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-annotations-common"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          },
+          "excludes": [
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-stdlib-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-common"
+            },
+            {
+              "group": "org.jetbrains.kotlin",
+              "module": "kotlin-test-annotations-common"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "quickjs-release.aar",
+          "url": "quickjs-kt-android-1.0.15-yonto.3.aar",
+          "size": 1829122,
+          "sha512": "65e3d54f301453beb2559a9b25c4c44b0e2601fb40f759003db8539833bcc8aa15ee64e3f96e6987f22550eecf375c8893eb2edabc320b43e4d1ab6b65a80fce",
+          "sha256": "8ab0f2b9230b46bb7a5e8bcc0f0ded0afd2b0105f6c3ebe608721a0e9eabe3c2",
+          "sha1": "e19541ea2595d3de0088f541207a247aeca4ffa9",
+          "md5": "ff0c6c1104031a992553513e593498ea"
+        }
+      ]
+    },
+    {
+      "name": "releaseSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "files": [
+        {
+          "name": "quickjs-android-sources.jar",
+          "url": "quickjs-kt-android-1.0.15-yonto.3-sources.jar",
+          "size": 35115,
+          "sha512": "693e7156f744e6926a58e663c599dcd44fe26088a4007faf8e05147723ef530b3761744f4c2c24d9557064143abdd699a21a85b17ba6bb4c04de554fb2e5f632",
+          "sha256": "d9dfe6ebdd785e27044bc514862a8a317a7537566c62e27f94c352f50faa79f9",
+          "sha1": "94cec2b8479f005b221e3a2f2eaee6afe454f4af",
+          "md5": "4e4c410fee9a9945fdff4a01ff62b6e0"
+        }
+      ]
+    }
+  ]
+}
