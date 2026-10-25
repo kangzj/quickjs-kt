@@ -1,0 +1,109 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../quickjs-kt/1.0.15-yonto.4/quickjs-kt-1.0.15-yonto.4.module",
+    "group": "io.github.kangzj",
+    "module": "quickjs-kt",
+    "version": "1.0.15-yonto.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quickjs-jvm.jar",
+          "url": "quickjs-kt-jvm-1.0.15-yonto.4.jar",
+          "size": 2314420,
+          "sha512": "c9054bdfe830b14a8613f77569537b1d616e216d0bff4debb2ffe48e41f23929669f72829cd9f11657a47321760dba6c16f25bbc084b0ae1714f029feb041d6e",
+          "sha256": "953eaac6942873e4e7a952974ae9c7f22cddd4cc2e3982b2fc3f014add57363f",
+          "sha1": "fa0a79b72109ad5cfaeedd800a0171730e2a8df1",
+          "md5": "9e88e16ee417ba4b012429ff275c02ae"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quickjs-jvm.jar",
+          "url": "quickjs-kt-jvm-1.0.15-yonto.4.jar",
+          "size": 2314420,
+          "sha512": "c9054bdfe830b14a8613f77569537b1d616e216d0bff4debb2ffe48e41f23929669f72829cd9f11657a47321760dba6c16f25bbc084b0ae1714f029feb041d6e",
+          "sha256": "953eaac6942873e4e7a952974ae9c7f22cddd4cc2e3982b2fc3f014add57363f",
+          "sha1": "fa0a79b72109ad5cfaeedd800a0171730e2a8df1",
+          "md5": "9e88e16ee417ba4b012429ff275c02ae"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "quickjs-jvm-sources.jar",
+          "url": "quickjs-kt-jvm-1.0.15-yonto.4-sources.jar",
+          "size": 35957,
+          "sha512": "536a6c74242e2598a4fb872f95f92d96e688b7ef2d7ccb8af703e2a88ec77cede8a075ec02a91ed85c67c3d664b8ba01163acc5aef25fbe9c158ed77dc663b09",
+          "sha256": "abc9cf798b4c741a2da1875dbf078c023fbd5a6ecd30b8ec0dc312a3fe0beb18",
+          "sha1": "7a29043da7758bda6c01f7e4745dea5ef5166e5c",
+          "md5": "8349944fceaabd427de0cbf722d25ad0"
+        }
+      ]
+    }
+  ]
+}

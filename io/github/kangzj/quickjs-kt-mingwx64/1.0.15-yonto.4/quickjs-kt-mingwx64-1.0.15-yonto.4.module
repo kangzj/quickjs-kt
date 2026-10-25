@@ -1,0 +1,88 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../quickjs-kt/1.0.15-yonto.4/quickjs-kt-1.0.15-yonto.4.module",
+    "group": "io.github.kangzj",
+    "module": "quickjs-kt",
+    "version": "1.0.15-yonto.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "mingwX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quickjs-mingwX64Main.klib",
+          "url": "quickjs-kt-mingwx64-1.0.15-yonto.4.klib",
+          "size": 239368,
+          "sha512": "4aa04f85d70350445f26920d19d3b123ca52b8e796977146d7adc7388f4fa9c4ba686711f04903fed9243ea8fa21d8fc388707887d28b8d1536ad58aa5eb7783",
+          "sha256": "a7730efad87c6c80048e54e7ea42a0482c69106d58ed951f761b266f01f80ef6",
+          "sha1": "9db19971c922ba835934826a864ea033fa12c163",
+          "md5": "f38f8f39b622f1cd4b95db7eec1a5ff3"
+        },
+        {
+          "name": "quickjs-mingwX64Cinterop-quickjsMain.klib",
+          "url": "quickjs-kt-mingwx64-1.0.15-yonto.4-cinterop-quickjs.klib",
+          "size": 453168,
+          "sha512": "320f2df3443d3b9bef8c196a5f3d134c78905245eb31d0ef4b168c636ed2cf3bd89d9767dfe348da45c88093fa766fec373c49941bd6fb96d6adbbd7d7164067",
+          "sha256": "c1cf758ff6d3be3815858eb5d0dda53cb219a44cb5ce96d4bb5c60023c19764c",
+          "sha1": "219eccd0b29fd0c2a2c50f7ce84bc13d5bfaa3ee",
+          "md5": "8ab7919fc08ee6215e49d1bc9bfe5499"
+        }
+      ]
+    },
+    {
+      "name": "mingwX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "quickjs-mingwx64-sources.jar",
+          "url": "quickjs-kt-mingwx64-1.0.15-yonto.4-sources.jar",
+          "size": 49648,
+          "sha512": "2f86cc76a24ba04b16446de4e2c265bbe52a149885897960120a3b5ed9650c66b97b37b038a3bffca3391ca7aaa3712435e78040cc1ea8a42713d93168c15522",
+          "sha256": "b6c9d582aaa1c506eeda98a0d672efe6c66579f7a8cb101ff8ed0e9bbe440e89",
+          "sha1": "14398d61b7662686f6a4429a054ee696be46a83f",
+          "md5": "205ca80468c7ed8d4c2f4fc6e3079ad0"
+        }
+      ]
+    }
+  ]
+}

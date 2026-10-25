@@ -1,0 +1,125 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../quickjs-kt/1.0.15-yonto.4/quickjs-kt-1.0.15-yonto.4.module",
+    "group": "io.github.kangzj",
+    "module": "quickjs-kt",
+    "version": "1.0.15-yonto.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "tvosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "tvos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quickjs-tvosSimulatorArm64Main.klib",
+          "url": "quickjs-kt-tvossimulatorarm64-1.0.15-yonto.4.klib",
+          "size": 239440,
+          "sha512": "d21e7a8cc22a24d638f59d2fb3406c0a198672ece0f51202fbcfafee888955d9ce9d0cccd5c01e46ac8ef9c87af9e08aae796ddf830083e808adaa5caef31973",
+          "sha256": "68919d68896208282355bf0a424873ac6b90cf66de0e20edd4919b7267835fd4",
+          "sha1": "8757054f6579fd81473139adee65494352068061",
+          "md5": "37267e3607f83f94b1efb868611d091a"
+        },
+        {
+          "name": "quickjs-tvosSimulatorArm64Cinterop-quickjsMain.klib",
+          "url": "quickjs-kt-tvossimulatorarm64-1.0.15-yonto.4-cinterop-quickjs.klib",
+          "size": 431491,
+          "sha512": "242e7b4b6f3c2253547168dfe25368dd869badd9ba56343b04b0a43c2b30b9f7ebc093c503fd367e7054a4c2155e44673018ef2ce15e69b54da2caf344dcbcdb",
+          "sha256": "0944a184f2a7aea95312845bb212afa870fc2d485949ebea704490054df37a94",
+          "sha1": "473352480c6e745994d01863bb72852bba71e2a3",
+          "md5": "471fbaf888584a99e0884e214f82e902"
+        }
+      ]
+    },
+    {
+      "name": "tvosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "tvos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "quickjs-tvossimulatorarm64-sources.jar",
+          "url": "quickjs-kt-tvossimulatorarm64-1.0.15-yonto.4-sources.jar",
+          "size": 49648,
+          "sha512": "2f86cc76a24ba04b16446de4e2c265bbe52a149885897960120a3b5ed9650c66b97b37b038a3bffca3391ca7aaa3712435e78040cc1ea8a42713d93168c15522",
+          "sha256": "b6c9d582aaa1c506eeda98a0d672efe6c66579f7a8cb101ff8ed0e9bbe440e89",
+          "sha1": "14398d61b7662686f6a4429a054ee696be46a83f",
+          "md5": "205ca80468c7ed8d4c2f4fc6e3079ad0"
+        }
+      ]
+    },
+    {
+      "name": "tvosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "tvos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "quickjs-tvossimulatorarm64-metadata.jar",
+          "url": "quickjs-kt-tvossimulatorarm64-1.0.15-yonto.4-metadata.jar",
+          "size": 67440,
+          "sha512": "c6736c24e47d57fc2cdfc044f703a75597635d1ff4fc32bdbafd2e9b926be92d0cfc97f71b14d068aecb0db6db7ef0501927bd3e2a5bf18b08ed546e4c954a9b",
+          "sha256": "2df6cce3bfbd3bb471dfaae39e722aac6613e557c6614399e20cd85663d0181f",
+          "sha1": "5ed57ca2e762643be01e0a03a763bf8a744846e7",
+          "md5": "9ebc9c71bfb033da3aa735567ce1985c"
+        }
+      ]
+    }
+  ]
+}
